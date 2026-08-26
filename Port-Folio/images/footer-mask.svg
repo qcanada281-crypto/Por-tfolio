@@ -1,0 +1,81 @@
+<svg width="1688" height="896" viewBox="0 0 1688 896" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Deep Obsidian Metallic Gradient -->
+    <linearGradient id="podBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C11"/>
+      <stop offset="50%" stop-color="#0D131B"/>
+      <stop offset="100%" stop-color="#06090D"/>
+    </linearGradient>
+
+    <!-- Glowing Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CFFF04" stop-opacity="0.6"/>
+      <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="70%" stop-color="#CFFF04" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#CFFF04" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <!-- Topographic Stroke Gradient -->
+    <linearGradient id="topoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CFFF04" stop-opacity="0.03"/>
+      <stop offset="50%" stop-color="#CFFF04" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#CFFF04" stop-opacity="0.03"/>
+    </linearGradient>
+
+    <filter id="podGlow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base Monolith Path with Chamfered Cyber Geometry -->
+  <path d="M40 0H1648C1670.09 0 1688 17.9086 1688 40V800C1688 822.091 1670.09 840 1648 840H1280L1240 896H448L408 840H40C17.9086 840 0 822.091 0 800V40C0 17.9086 17.9086 0 40 0Z" 
+        fill="url(#podBg)" 
+        stroke="url(#borderGrad)" 
+        stroke-width="1.5"/>
+
+  <!-- Inner Ambient Depth Glow -->
+  <ellipse cx="844" cy="448" rx="650" ry="320" fill="#CFFF04" fill-opacity="0.035"/>
+
+  <!-- Topographic Elevation Contours (Organic Cyber Waveform Lines) -->
+  <g stroke="url(#topoGrad)" stroke-width="1.25" fill="none">
+    <path d="M-50,200 C300,100 600,350 950,180 C1300,10 1500,280 1750,150"/>
+    <path d="M-50,320 C250,220 580,480 920,300 C1260,120 1480,400 1750,260"/>
+    <path d="M-50,440 C200,340 550,600 890,420 C1230,240 1450,520 1750,380"/>
+    <path d="M-50,560 C150,460 520,720 860,540 C1200,360 1420,640 1750,500"/>
+    <path d="M-50,680 C100,580 490,840 830,660 C1170,480 1390,760 1750,620"/>
+    <path d="M200,80 C600,20 800,220 1200,80 C1450,-10 1600,120 1750,50"/>
+    <path d="M-50,780 C400,680 700,820 1100,700 C1400,600 1600,750 1750,700"/>
+  </g>
+
+  <!-- Precision Corner Telemetry Markers & Crosshairs -->
+  <g stroke="#CFFF04" stroke-width="1" opacity="0.35">
+    <!-- Top Left -->
+    <path d="M60 40H90 M60 40V70"/>
+    <!-- Top Right -->
+    <path d="M1628 40H1598 M1628 40V70"/>
+    <!-- Bottom Left -->
+    <path d="M60 800H90 M60 800V770"/>
+    <!-- Bottom Right -->
+    <path d="M1628 800H1598 M1628 800V770"/>
+    
+    <!-- Central Alignment Marks -->
+    <circle cx="844" cy="50" r="3" fill="#CFFF04" opacity="0.6"/>
+    <circle cx="844" cy="850" r="3" fill="#CFFF04" opacity="0.6"/>
+  </g>
+
+  <!-- Subtle Cyber Tech Grid Dots -->
+  <g fill="#CFFF04" opacity="0.15">
+    <circle cx="120" cy="120" r="1.5"/>
+    <circle cx="240" cy="120" r="1.5"/>
+    <circle cx="1448" cy="120" r="1.5"/>
+    <circle cx="1568" cy="120" r="1.5"/>
+    <circle cx="120" cy="720" r="1.5"/>
+    <circle cx="240" cy="720" r="1.5"/>
+    <circle cx="1448" cy="720" r="1.5"/>
+    <circle cx="1568" cy="720" r="1.5"/>
+  </g>
+</svg>

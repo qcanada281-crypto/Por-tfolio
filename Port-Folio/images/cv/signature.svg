@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 180" class="signature-svg" fill="none">
+    <defs>
+        <filter id="neon-glow-strong" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="4" result="blur1" />
+            <feGaussianBlur stdDeviation="10" result="blur2" />
+            <feMerge>
+                <feMergeNode in="blur2" />
+                <feMergeNode in="blur1" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+        <linearGradient id="sig-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#CFFF04" />
+            <stop offset="50%" stop-color="#E2FF66" />
+            <stop offset="100%" stop-color="#CFFF04" />
+        </linearGradient>
+    </defs>
+    <!-- Background Glow Layer -->
+    <g class="sig-layer-glow" stroke="#CFFF04" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.35" filter="url(#neon-glow-strong)">
+        <!-- 1. Wave / Pulse -->
+        <path class="sig-path sig-p1" d="M 30 115 L 42 142 L 58 78 L 74 152 L 92 68 L 110 135" />
+        <!-- 2. Peak A -->
+        <path class="sig-path sig-p2" d="M 110 135 L 148 18 L 188 165" />
+        <!-- 3. Crossbar & Flourish -->
+        <path class="sig-path sig-p3" d="M 20 112 Q 130 110 270 110" />
+        <!-- 4. Accent / Dot & Tail Loop -->
+        <path class="sig-path sig-p4" d="M 208 72 A 2 2 0 1 1 208 76" />
+        <path class="sig-path sig-p5" d="M 238 68 C 258 64 268 76 256 86 C 246 94 235 90 235 90" />
+    </g>
+    <!-- Crisp Foreground Vector Layer -->
+    <g class="sig-layer-core" stroke="url(#sig-gradient)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+        <!-- 1. Wave / Pulse -->
+        <path class="sig-path sig-p1" d="M 30 115 L 42 142 L 58 78 L 74 152 L 92 68 L 110 135" />
+        <!-- 2. Peak A -->
+        <path class="sig-path sig-p2" d="M 110 135 L 148 18 L 188 165" />
+        <!-- 3. Crossbar & Flourish -->
+        <path class="sig-path sig-p3" d="M 20 112 Q 130 110 270 110" />
+        <!-- 4. Accent / Dot & Tail Loop -->
+        <path class="sig-path sig-p4" d="M 208 72 A 2 2 0 1 1 208 76" />
+        <path class="sig-path sig-p5" d="M 238 68 C 258 64 268 76 256 86 C 246 94 235 90 235 90" />
+    </g>
+    <!-- Interactive Glowing Pen Tip Sparkle -->
+    <circle id="sig-pen-tip" cx="30" cy="115" r="4.5" fill="#FFFFFF" filter="url(#neon-glow-strong)" opacity="0" />
+</svg>

@@ -1,0 +1,150 @@
+/* Google Fonts Imports for Portfolio typography */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Oswald:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --font-roboto: 'Roboto', sans-serif;
+  --font-oswald: 'Oswald', sans-serif;
+  --font-alex-brush: 'Alex Brush', cursive;
+  --lorenzo-dark: #07090E;
+  --lorenzo-accent: #07090E;
+  --color-white: #07090E;
+  --color-black: #f1f5f9;
+  --color-gray-900: #f1f5f9;
+  --color-gray-800: #1e293b;
+  --color-gray-700: #334155;
+  --color-gray-600: #475569;
+  --color-gray-500: #64748b;
+}
+
+.roboto_3d2e6df1-module__75dQ-a__variable {
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+.alex_brush_21121ce4-module__GqeHyq__variable {
+  --font-alex-brush: 'Alex Brush', cursive;
+}
+
+.oswald_26e63a53-module__pw3xkq__variable {
+  --font-oswald: 'Oswald', sans-serif;
+}
+
+/* GLOBAL DARK LUXURY OVERRIDES FOR LIVE SERVER & REACT HYDRATION */
+html,
+body,
+main {
+  background-color: #07090E !important;
+  color: #f1f5f9 !important;
+}
+
+.bg-white,
+.bg-lorenzo-dark,
+.bg-\[\#ffffff\],
+.bg-white\/100,
+.bg-lorenzo-accent,
+footer {
+  background-color: #07090E !important;
+}
+
+.text-gray-900,
+.text-lorenzo-dark,
+.text-slate-900 {
+  color: #f1f5f9 !important;
+}
+
+.text-lorenzo-accent,
+.text-\[\#D1FF1C\],
+.text-\[\#CFFF04\] {
+  color: #CFFF04 !important;
+  text-shadow: 0 0 20px rgba(207, 255, 4, 0.5) !important;
+}
+
+/* Glassmorphism Cards for Masonry Gallery */
+#masonry-gallery a {
+  background: rgba(15, 23, 42, 0.75) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
+  transition: all 0.4s ease-in-out !important;
+}
+
+#masonry-gallery a:hover {
+  border-color: rgba(207, 255, 4, 0.5) !important;
+  box-shadow: 0 0 30px rgba(207, 255, 4, 0.25) !important;
+  transform: translateY(-4px) scale(1.02) !important;
+}
+
+/* Technology Skill Cards */
+#helmets .group>div {
+  background: rgba(15, 23, 42, 0.75) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
+  transition: all 0.3s ease !important;
+}
+
+#helmets .group:hover>div {
+  border-color: rgba(207, 255, 4, 0.5) !important;
+  box-shadow: 0 0 25px rgba(207, 255, 4, 0.25) !important;
+}
+
+/* Floating Navbar Header */
+header {
+  background-color: rgba(7, 9, 14, 0.85) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+header h1 {
+  color: #CFFF04 !important;
+  text-shadow: 0 0 20px rgba(207, 255, 4, 0.6) !important;
+}
+
+/* Contact Step Button & Input */
+#contact input {
+  color: #CFFF04 !important;
+  text-shadow: 0 0 15px rgba(207, 255, 4, 0.4) !important;
+}
+
+#contact input::placeholder {
+  color: #475569 !important;
+}
+
+#contact button {
+  background-color: #CFFF04 !important;
+  color: #000000 !important;
+  box-shadow: 0 0 25px rgba(207, 255, 4, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+#contact button:hover {
+  background-color: #d6ff33 !important;
+  box-shadow: 0 0 35px rgba(207, 255, 4, 0.5) !important;
+}
+
+/* FOOTER HIGH-CONTRAST DARK OVERRIDES */
+footer {
+  background-color: #07090E !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+footer h2 {
+  color: #FFFFFF !important;
+}
+
+footer a {
+  color: #F8FAFC !important;
+}
+
+footer a:hover {
+  color: #CFFF04 !important;
+  text-shadow: 0 0 15px rgba(207, 255, 4, 0.6) !important;
+}
+
+footer p {
+  color: #CBD5E1 !important;
+}
