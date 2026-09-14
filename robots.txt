@@ -1,0 +1,33 @@
+# ==============================================================================
+# ROBOTS.TXT — Portfolio Abdelilah El Abed (Développeur Web Full Stack Maroc)
+# https://port-folio-elabed.vercel.app/
+# ==============================================================================
+
+User-agent: *
+Allow: /
+Allow: /images/
+Allow: /_next/static/css/
+Allow: /_next/static/chunks/
+Allow: /scripts/
+
+# Disallow private and administrative resources
+Disallow: /.vercel/
+Disallow: /.vscode/
+Disallow: /.qodo/
+Disallow: /components/
+Disallow: /images/cv/*.pdf$
+Disallow: /*.py$
+Disallow: /*.ps1$
+Disallow: /*.json$
+
+# Googlebot specific optimizations
+User-agent: Googlebot
+Allow: /
+Allow: /images/
+Allow: /_next/static/
+
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Sitemap Location
+Sitemap: https://port-folio-elabed.vercel.app/sitemap.xml
