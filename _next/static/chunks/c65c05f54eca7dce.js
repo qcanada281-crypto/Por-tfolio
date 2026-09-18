@@ -17393,7 +17393,7 @@ void main() {
                     }
                         (d)
                         , u = new ij
-                        , p = u.load("images/abdelilah_11-removebg-preview.png", e => {
+                        , p = u.load("images/abdelilah_11-removebg-preview.webp", e => {
                             let t, i, n = e.image, s = n.width / n.height;
                             s > r / a ? (t = r,
                                 i = r / s) : (i = a,
@@ -18180,7 +18180,7 @@ void main() {
                             <div class="radar-img-wrapper">
                                 <img alt="Abdelilah El Abed - Full-Stack & AI Engineer" decoding="async"
                                     style="width: 100%; height: 100%; object-fit: contain; object-position: bottom; position: relative; z-index: 10; pointer-events: none;"
-                                    src="images/abdelilah_11-removebg-preview.png" />
+                                    src="images/abdelilah_11-removebg-preview.webp" />
                             </div>
 
                             <!-- Hotspot 1: Right Temple (WHO AM I) -->
@@ -18445,7 +18445,7 @@ void main() {
             (0,
                 i.useEffect)(() => {
                     let e = document.createElement("img");
-                    e.src = "images/abdelilah_11-removebg-preview.png",
+                    e.src = "images/abdelilah_11-removebg-preview.webp",
                         e.onload = () => {
                             c.current = e,
                                 m()
@@ -18914,7 +18914,7 @@ void main() {
                                                                 className: "relative w-full h-full p-2.5 glass-card rounded-3xl overflow-hidden border border-[#CFFF04]/30 shadow-[0_0_50px_rgba(207,255,4,0.25)] group",
                                                                 children: [(0,
                                                                     t.jsx)("img", {
-                                                                        src: "images/developer-workspace.jpg",
+                                                                        src: "images/developer-workspace.webp",
                                                                         alt: "Abdelilah El Abed Workspace",
                                                                         className: "w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-700"
                                                                     }), (0,
@@ -19356,7 +19356,7 @@ void main() {
             sub: "PHP 8+",
             cat: "Backend",
             desc: "Server-side scripting & web development",
-            image: "images/php-removebg-preview (1).png",
+            image: "images/php-removebg-preview.webp",
             color: "#777BB4",
             glow: "rgba(119, 123, 180, 0.45)",
             subtle: "rgba(119, 123, 180, 0.15)",
@@ -19367,7 +19367,7 @@ void main() {
             sub: "MySQL / Postgres",
             cat: "Database",
             desc: "Relational databases & query optimization",
-            image: "images/sql-removebg-preview.png",
+            image: "images/sql-removebg-preview.webp",
             color: "#00758F",
             glow: "rgba(0, 117, 143, 0.45)",
             subtle: "rgba(0, 117, 143, 0.15)",
@@ -19389,7 +19389,7 @@ void main() {
             sub: "v18+ / v19",
             cat: "Frontend",
             desc: "Component-based UI with hooks & state",
-            image: "images/react.png",
+            image: "images/react.webp",
             color: "#61DAFB",
             glow: "rgba(97, 218, 251, 0.45)",
             subtle: "rgba(97, 218, 251, 0.15)",
@@ -19455,7 +19455,7 @@ void main() {
             sub: "v20 LTS",
             cat: "Runtime",
             desc: "Server-side JavaScript runtime environment",
-            image: "images/node.png",
+            image: "images/node.webp",
             color: "#539E43",
             glow: "rgba(83, 158, 67, 0.45)",
             subtle: "rgba(83, 158, 67, 0.15)",
@@ -19466,7 +19466,7 @@ void main() {
             sub: "JDK 17+",
             cat: "Language",
             desc: "Cross-platform OOP & enterprise applications",
-            image: "images/java.png",
+            image: "images/java.webp",
             color: "#F89820",
             glow: "rgba(248, 152, 32, 0.45)",
             subtle: "rgba(248, 152, 32, 0.15)",
@@ -19499,7 +19499,7 @@ void main() {
             sub: "Main IDE",
             cat: "Editor",
             desc: "Powerful code editor with rich extensions",
-            image: "images/VSCODE.png",
+            image: "images/VSCODE.webp",
             color: "#007ACC",
             glow: "rgba(0, 122, 204, 0.45)",
             subtle: "rgba(0, 122, 204, 0.15)",
@@ -19851,62 +19851,62 @@ void main() {
             , a = e.i(26414)
             , s = e.i(63751);
         let o = [{
-            src: "images/project1.png",
+            src: "images/project1.webp",
             alt: "Kawkab Al Ouloum - School & EduTech Platform",
             aspect: "aspect-[4/3]",
             link: "https://edu-institution-blue.vercel.app/"
         }, {
-            src: "images/project2.png",
+            src: "images/project2.webp",
             alt: "TB Dentaire - Medical Clinic & Booking",
             aspect: "aspect-[4/3]",
             link: "https://tbdentaire.com/"
         }, {
-            src: "images/project3.png",
+            src: "images/project3.webp",
             alt: "Voi-Ture Lux - Luxury Automotive VIP",
             aspect: "aspect-[4/3]",
             link: "https://voi-ture.vercel.app/"
         }, {
-            src: "images/pr-asso1.png",
+            src: "images/pr-asso1.webp",
             alt: "Jisr Al-Amal - Humanitarian NGO Platform",
             aspect: "aspect-[4/3]",
             link: "https://jisralamal.org/"
         }, {
-            src: "images/project4.png",
+            src: "images/project4.webp",
             alt: "Maitre Abdelilah - Cabinet d'Avocat & Legal SaaS",
             aspect: "aspect-[4/3]",
             link: "https://lawyer-khaki-three.vercel.app/"
         }, {
-            src: "images/project9.png",
+            src: "images/project9.webp",
             alt: "L3OUMDA - Terroirs & Artisanat Marocain",
             aspect: "aspect-[4/3]",
             link: "https://l3oum-da.vercel.app/"
         }, {
-            src: "images/project5.png",
+            src: "images/project5.webp",
             alt: "Nya Bio - Organic Moroccan Terroir Store",
             aspect: "aspect-[4/3]",
             link: "https://nyabio.com/"
         }, {
-            src: "images/project8.png",
+            src: "images/project8.webp",
             alt: "OPTI-LOOK - Haute Lunetterie & Optique de Précision",
             aspect: "aspect-[4/3]",
             link: "https://opti-look-virid.vercel.app/"
         }, {
-            src: "images/project6.png",
+            src: "images/project6.webp",
             alt: "Imm-Obilier AI - Smart Real Estate Platform",
             aspect: "aspect-[4/3]",
             link: "https://immobilier-ai.vercel.app/"
         }, {
-            src: "images/project10.png",
+            src: "images/project10.webp",
             alt: "Imm-Obilier Prestige - Luxury Real Estate Maroc",
             aspect: "aspect-[4/3]",
             link: "https://iimm-obilier.vercel.app/"
         }, {
-            src: "images/pr-hirafi.png",
+            src: "images/pr-hirafi.webp",
             alt: "Plateforme El Hirafi - Moroccan Craftsmen Network",
             aspect: "aspect-[4/3]",
             link: "https://hirafi-gamma.vercel.app/"
         }, {
-            src: "images/project11.png",
+            src: "images/project11.webp",
             alt: "Al Houda Food - Restaurant & Fast Food Premium",
             aspect: "aspect-[4/3]",
             link: "https://houda-food.vercel.app/"
