@@ -1,12 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+        http://www.google.com/schemas/sitemap-image/1.1
+        http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
   <url>
     <loc>https://port-folio-elabed.vercel.app/</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://port-folio-elabed.vercel.app/images/elabed_logo.jpg</image:loc>
+      <image:title>Abdelilah El Abed - Développeur Web Full Stack Casablanca Maroc</image:title>
+      <image:caption>Logo officiel du Portfolio professionnel d'Abdelilah El Abed, Développeur Web Full Stack et Mobile au Maroc.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://port-folio-elabed.vercel.app/images/abdelilah_11-removebg-preview.webp</image:loc>
+      <image:title>Abdelilah El Abed - Développeur Web Casablanca &amp; Marrakech</image:title>
+      <image:caption>Portrait professionnel d'Abdelilah El Abed, spécialiste en architectures PHP, Laravel, React et Next.js.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://port-folio-elabed.vercel.app/images/project1.webp</image:loc>
+      <image:title>Kawkab Al Ouloum - Gestion Scolaire &amp; SaaS Éducatif</image:title>
+      <image:caption>Plateforme numérique intégrée de gestion scolaire développée avec Laravel, MySQL et Tailwind CSS.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://port-folio-elabed.vercel.app/images/project2.webp</image:loc>
+      <image:title>TB Dentaire Clinic - Prise de rendez-vous en ligne React</image:title>
+      <image:caption>Application web médicale et système de réservation en ligne pour cabinet dentaire au Maroc.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://port-folio-elabed.vercel.app/images/project3.webp</image:loc>
+      <image:title>Voi-Ture Lux - Plateforme de Location de Véhicules</image:title>
+      <image:caption>Plateforme interactive et moderne de location de véhicules haut de gamme avec réservation en ligne.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://port-folio-elabed.vercel.app/images/pr-hirafi.webp</image:loc>
+      <image:title>Hirafi Morocco - Marketplace SaaS pour Artisans</image:title>
+      <image:caption>Marketplace pour la mise en relation d'artisans professionnels et de particuliers pour travaux au Maroc.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://port-folio-elabed.vercel.app/images/pr-asso1.webp</image:loc>
+      <image:title>Plateforme Solidaire et Gestion Associative</image:title>
+      <image:caption>Solution web complète pour associations caritatives et gestion transparente des dons et adhérents.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://port-folio-elabed.vercel.app/images/project4.webp</image:loc>
+      <image:title>E-Commerce Store Moderne &amp; API REST</image:title>
+      <image:caption>Boutique en ligne avec panier dynamique, passerelle de paiement sécurisée et gestion de catalogue.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://port-folio-elabed.vercel.app/images/project9.webp</image:loc>
+      <image:title>Application Web Full Stack Haute Performance</image:title>
+      <image:caption>Architecture web scalable développée sur mesure pour flux de données complexes.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://port-folio-elabed.vercel.app/images/project5.webp</image:loc>
+      <image:title>Tableau de Bord Analytics &amp; Reporting</image:title>
+      <image:caption>Dashboard moderne de visualisation de données avec graphiques interactifs et métriques clés.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://port-folio-elabed.vercel.app/images/project10.webp</image:loc>
+      <image:title>Portail d'Entreprise &amp; Intranet Sécurisé</image:title>
+      <image:caption>Portail collaboratif d'entreprise avec gestion avancée des rôles et permissions.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://port-folio-elabed.vercel.app/images/project11.webp</image:loc>
+      <image:title>Solution Digitale Multiplateforme</image:title>
+      <image:caption>Conception et intégration d'application responsive pour une expérience utilisateur fluide.</image:caption>
+    </image:image>
   </url>
 </urlset>
