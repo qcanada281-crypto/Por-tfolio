@@ -14,6 +14,7 @@
     <meta name="author" content="Abdelilah El Abed" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="https://port-folio-elabed.vercel.app/" />
+    <meta name="google-site-verification" content="google332ca866acc68e3e" />
 
     <!-- Geo & Local Relevance Tags (Casablanca & Marrakech, Maroc) -->
     <meta name="geo.region" content="MA-06, MA-07, MA" />
@@ -51,6 +52,116 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/elabed_logo.webp" />
     <link rel="image_src" href="images/elabed_logo.webp" />
     <meta name="msapplication-TileImage" content="images/elabed_logo.webp" />
+
+    <!-- Asset Resolver & Fallback Engine -->
+    <script>
+        (function() {
+            if (window.location.pathname === '/Port-Folio') {
+                try {
+                    window.history.replaceState(null, '', '/Port-Folio/' + window.location.search + window.location.hash);
+                } catch(e) {}
+            }
+
+            var SVG_DATA_MAP = {
+                "JAVASCRIPT.svg": 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="%23F7DF1E" d="M0 0h128v128H0z"/><path d="M67.31 104.56c3.27 5.48 7.6 9.53 15.35 9.53 6.47 0 10.65-3.18 10.65-7.6 0-5.32-4.24-7.25-11.35-10.31l-3.9-1.68c-11.23-4.83-18.72-10.9-18.72-23.75 0-11.75 9.17-20.73 24.12-20.73 10.5 0 18.02 3.71 23.36 12.98l-10.5 6.74c-2.92-5.18-6.1-7.25-12.86-7.25-5.32 0-8.83 2.47-8.83 6.1 0 4.24 3.36 6.19 9.8 8.94l3.9 1.68c13.06 5.58 20.31 11.43 20.31 24.64 0 14.13-11.04 21.84-26.6 21.84-14.83 0-23.86-7.07-28.78-16.14l10.05-5.99zm-38.98 1.15c2.47 4.33 6.36 7.95 12.72 7.95 5.83 0 9.53-2.3 9.53-11.57V51.78h15.26v49.88c0 17.5-10.07 25.01-24.64 25.01-11.66 0-19.34-5.92-23.32-14.31l10.45-6.65z"/></svg>',
+                "TYPESCRIPT.svg": 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="%233178C6" d="M0 0h128v128H0z"/><path fill="%23FFF" d="M70.7 104.56c3.27 5.48 7.6 9.53 15.35 9.53 6.47 0 10.65-3.18 10.65-7.6 0-5.32-4.24-7.25-11.35-10.31l-3.9-1.68c-11.23-4.83-18.72-10.9-18.72-23.75 0-11.75 9.17-20.73 24.12-20.73 10.5 0 18.02 3.71 23.36 12.98l-10.5 6.74c-2.92-5.18-6.1-7.25-12.86-7.25-5.32 0-8.83 2.47-8.83 6.1 0 4.24 3.36 6.19 9.8 8.94l3.9 1.68c13.06 5.58 20.31 11.43 20.31 24.64 0 14.13-11.04 21.84-26.6 21.84-14.83 0-23.86-7.07-28.78-16.14l10.05-5.99zM20 51.78h40v12.5H46.25v50.5H33.75v-50.5H20v-12.5z"/></svg>',
+                "HTML.svg": 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="%23E34F26" d="M19 116L9 4h110l-10 112-45 12z"/><path fill="%23EF652A" d="M64 116l37-10 9-94H64z"/><path fill="%23FFF" d="M64 45H43l-1 12h22v12H30l3 34 31 9V45zm0 46l19-5 2-23H73l-1 11 12 3-1 9-19 5V91z"/></svg>',
+                "CSS.svg": 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="%231572B6" d="M19 116L9 4h110l-10 112-45 12z"/><path fill="%2333A9DC" d="M64 116l37-10 9-94H64z"/><path fill="%23FFF" d="M64 45H32l1 12h31v12H44l1 12h19v12l-19-5-1-11H32l3 23 29 8V45zm0 46V45h32l-3 34H64v12l19-5 2-23h12l-4 34-29 9z"/></svg>',
+                "csharp.svg": 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="%23239120" d="M64 128C28.7 128 0 99.3 0 64S28.7 0 64 0s64 28.7 64 64-28.7 64-64 64zm0-112C37.5 16 16 37.5 16 64s21.5 48 48 48 48-21.5 48-48S90.5 16 64 16zm-8 24h16v16h16v16H72v16H56V72H40V56h16V40z"/></svg>',
+                "next.svg": 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><circle cx="64" cy="64" r="60" fill="%23000"/><path fill="%23FFF" d="M48 40v48h8V40h-8zm28 0l16 22V40h-8v12l-8-12z"/></svg>',
+                "vue.svg": 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="%234FC08D" d="M78.6 16H96L64 71.5 32 16h17.4L64 42z"/><path fill="%2335495E" d="M49.4 16L64 41.3 78.6 16H96L64 71.5 32 16z"/><path fill="%234FC08D" d="M14 16l50 86.6L114 16H96L64 71.5 32 16z"/></svg>',
+                "tailwind.svg": 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="%2338BDF8" d="M32 36c6-12 18-16 30-10 8 4 13 12 16 20 6 12 14 16 26 12-6 12-18 16-30 10-8-4-13-12-16-20-6-12-14-16-26-12zm-32 32c6-12 18-16 30-10 8 4 13 12 16 20 6 12 14 16 26 12-6 12-18 16-30 10-8-4-13-12-16-20-6-12-14-16-26-12z"/></svg>',
+                "framermotion.svg": 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="%230055FF" d="M24 16h80v32H64zM24 48h40l40 40H24zM24 88h40v24z"/></svg>',
+                "laravel.svg": 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="%23FF2D20" d="M108 30L67 14 26 30v68l41 16 41-16V30zm-41 72L34 87V37l33 13v52zm33-15l-26 10V47l26-10v50z"/></svg>',
+                "dotnet.svg": 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="%23512BD4" d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64 64-28.7 64-64S99.3 0 64 0zm-8 88H40V40h16v48zm32 0H72V40h16v48z"/></svg>',
+                "git.svg": 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="%23F05032" d="M123.6 57.3L70.7 4.4c-3.6-3.6-9.4-3.6-13 0L39.8 22.3l16.4 16.4c3.4-1.1 7.3-.4 10.1 2.3 2.9 2.9 3.5 7.1 2.1 10.6l15.7 15.7c3.5-1.4 7.7-.8 10.6 2.1 4.1 4.1 4.1 10.7 0 14.8-4.1 4.1-10.7 4.1-14.8 0-3.1-3.1-3.6-7.8-1.8-11.4L62.7 57.1v24.2c.9.5 1.7 1.2 2.3 1.8 4.1 4.1 4.1 10.7 0 14.8-4.1 4.1-10.7 4.1-14.8 0-4.1-4.1-4.1-10.7 0-14.8.8-.8 1.8-1.5 2.9-1.9V56.6c-1.1-.4-2.1-1.1-2.9-1.9-3-3-3.5-7.4-1.9-11L32.2 26.9 4.4 54.7c-3.6 3.6-3.6 9.4 0 13l52.9 52.9c3.6 3.6 9.4 3.6 13 0l53.3-53.3c3.6-3.6 3.6-9.4 0-13z"/></svg>',
+                "figma.svg": 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="%23F24E1E" d="M43 16h21v21H43z"/><path fill="%23FF7262" d="M64 16h21v21H64z"/><path fill="%23A259FF" d="M43 37h21v21H43z"/><path fill="%231ABCFE" d="M64 37a10.5 10.5 0 1 0 0 21 10.5 10.5 0 0 0 0-21z"/><path fill="%230ACF83" d="M43 58a10.5 10.5 0 1 0 21 0v21H43a10.5 10.5 0 0 0 0-21z"/></svg>',
+                "PANEL.svg": 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="%23FF6C2C" d="M64 16L16 48v48l48 16 48-16V48L64 16zm0 18l32 22-32 22-32-22 32-22z"/></svg>'
+            };
+
+            window.resolveAssetPath = function(img) {
+                if (!img || img.__resolving) return;
+                var rawSrc = img.getAttribute('src') || img.src || '';
+                var filename = rawSrc.split('?')[0].split('#')[0].split('/').pop();
+                if (!filename) return;
+
+                img.style.color = 'transparent';
+
+                if (SVG_DATA_MAP[filename]) {
+                    img.__resolving = true;
+                    img.src = SVG_DATA_MAP[filename];
+                    img.srcset = '';
+                    return;
+                }
+
+                var baseDir = window.location.pathname.indexOf('/Port-Folio') !== -1 ? '/Port-Folio/' : './';
+                var candidates = [
+                    baseDir + 'images/' + filename,
+                    './images/' + filename,
+                    'images/' + filename,
+                    '/images/' + filename
+                ];
+
+                var tryIdx = parseInt(img.dataset.tryIdx || '0', 10);
+                if (tryIdx < candidates.length) {
+                    var nextCandidate = candidates[tryIdx];
+                    img.dataset.tryIdx = (tryIdx + 1).toString();
+                    if (nextCandidate !== rawSrc && nextCandidate !== img.src) {
+                        img.src = nextCandidate;
+                        img.srcset = '';
+                    } else if (tryIdx + 1 < candidates.length) {
+                        img.dataset.tryIdx = (tryIdx + 2).toString();
+                        img.src = candidates[tryIdx + 1];
+                        img.srcset = '';
+                    }
+                }
+            };
+
+            function scanAndFix() {
+                var imgs = document.querySelectorAll('.tech-brand-card img, img.tech-img');
+                for (var i = 0; i < imgs.length; i++) {
+                    var img = imgs[i];
+                    if (!img.getAttribute('onerror')) {
+                        img.setAttribute('onerror', 'window.resolveAssetPath(this)');
+                    }
+                    if (img.naturalWidth === 0 && img.complete) {
+                        window.resolveAssetPath(img);
+                    }
+                }
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', scanAndFix);
+            } else {
+                scanAndFix();
+            }
+            window.addEventListener('load', scanAndFix);
+
+            if (window.MutationObserver) {
+                var observer = new MutationObserver(function(mutations) {
+                    for (var i = 0; i < mutations.length; i++) {
+                        var added = mutations[i].addedNodes;
+                        for (var j = 0; j < added.length; j++) {
+                            var node = added[j];
+                            if (node.nodeType === 1) {
+                                if (node.tagName === 'IMG' && (node.classList.contains('tech-img') || (node.closest && node.closest('.tech-brand-card')))) {
+                                    if (!node.getAttribute('onerror')) node.setAttribute('onerror', 'window.resolveAssetPath(this)');
+                                    if (node.naturalWidth === 0 && node.complete) window.resolveAssetPath(node);
+                                } else if (node.querySelectorAll) {
+                                    var found = node.querySelectorAll('.tech-brand-card img, img.tech-img');
+                                    for (var k = 0; k < found.length; k++) {
+                                        if (!found[k].getAttribute('onerror')) found[k].setAttribute('onerror', 'window.resolveAssetPath(this)');
+                                        if (found[k].naturalWidth === 0 && found[k].complete) window.resolveAssetPath(found[k]);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+                observer.observe(document.documentElement, { childList: true, subtree: true });
+            }
+        })();
+    </script>
 
     <!-- Stylesheets & Scripts -->
     <link rel="stylesheet" href="/_next/static/chunks/2b6b1421d4754902.css" data-precedence="next" />
@@ -403,6 +514,45 @@
             background: radial-gradient(circle at 50% 50%, rgba(207, 255, 4, 0.06) 0%, rgba(7, 9, 14, 0) 70%);
         }
 
+        /* ============================================================
+           HERO DYNAMIC NEON TYPEWRITER EFFECT
+           ============================================================ */
+        .typewriter-box {
+            display: inline-flex;
+            align-items: baseline;
+            justify-content: center;
+            vertical-align: baseline;
+            position: relative;
+        }
+
+        .typewriter-cursor {
+            display: inline-block;
+            color: #CFFF04;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+            font-weight: 300;
+            margin-left: 0.12em;
+            text-shadow: 0 0 12px rgba(207, 255, 4, 0.85), 0 0 25px rgba(207, 255, 4, 0.45);
+            transform: translateY(-0.04em);
+            opacity: 1;
+            transition: opacity 0.12s ease-in-out;
+            line-height: 1;
+        }
+
+        .typewriter-cursor.is-blinking {
+            animation: typewriterCursorBlink 0.9s infinite cubic-bezier(0.4, 0, 0.6, 1);
+        }
+
+        @keyframes typewriterCursorBlink {
+            0%, 100% {
+                opacity: 1;
+                filter: drop-shadow(0 0 8px rgba(207, 255, 4, 0.9));
+            }
+            50% {
+                opacity: 0;
+                filter: none;
+            }
+        }
+
         /* Smooth custom scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
@@ -728,6 +878,9 @@
             transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
                 filter 0.5s ease;
             filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+            font-size: 0 !important;
+            user-select: none;
+            color: transparent !important;
         }
 
         .tech-brand-card:hover .tech-img {
@@ -1545,19 +1698,15 @@
                     </div>
                     <div class="text-center">
                         <h1
-                            class="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight text-balance leading-[1.1] xl:text-8xl">
+                            class="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight text-balance leading-[1.15] xl:text-8xl">
                             <span class="sr-only">Abdelilah El Abed — Développeur Web Full Stack Casablanca &amp; Maroc (PHP, Laravel, React, Next.js) : </span>
                             <span
-                                class="text-[#CFFF04] text-glow-neon font-brier leading-[1.1] text-8xl">CRAFTING</span>
-                            DIGITAL<br />
-                            EXPERIENCES, BUILDING<br />
-                            <span class="text-[#CFFF04] text-glow-neon font-brier leading-[1.1]">SOLUTIONS</span>
-                            THAT<br />
-                            MATTER. TRANSFORMING<br />
-                            IDEAS INTO<br />
-                            <span class="text-[#CFFF04] text-glow-neon font-brier leading-[1.1]">CODE</span>
-                            WITH<br />
-                            PASSION AND<br />PRECISION.
+                                class="text-[#CFFF04] text-glow-neon font-brier leading-[1.1]">ENGINEERING</span> POWERFUL<br />
+                            SOFTWARE SOLUTIONS,<br />
+                            TRANSFORMED INTO<br />
+                            <span class="typewriter-box" aria-label="Engineering powerful software solutions, transformed into code, success, and tangible impact">
+                                <span id="hero-typewriter-text" class="text-[#CFFF04] text-glow-neon font-brier leading-[1.1]">CODE</span><span id="hero-typewriter-cursor" class="typewriter-cursor is-blinking" aria-hidden="true">|</span>
+                            </span>
                         </h1>
                         <p class="mt-8 text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl mx-auto font-medium leading-relaxed">
                             <strong class="text-white font-bold">Abdelilah El Abed</strong> — Développeur Web Full Stack au Maroc (Marrakech &amp; Casablanca). Spécialiste dans la conception d'architectures web robustes, d'API REST performantes, de solutions backend PHP &amp; Laravel, et d'interfaces réactives modernes avec React &amp; Next.js.
@@ -2810,7 +2959,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #F7DF1E; --brand-glow: rgba(247, 223, 30, 0.45); --brand-glow-subtle: rgba(247, 223, 30, 0.12); --brand-glow-inner: rgba(247, 223, 30, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="JAVASCRIPT" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="JAVASCRIPT" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/JAVASCRIPT.svg" />
                             </div>
@@ -2836,7 +2985,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #3178C6; --brand-glow: rgba(49, 120, 198, 0.45); --brand-glow-subtle: rgba(49, 120, 198, 0.15); --brand-glow-inner: rgba(49, 120, 198, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="TYPESCRIPT" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="TYPESCRIPT" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/TYPESCRIPT.svg" />
                             </div>
@@ -2862,7 +3011,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #E34F26; --brand-glow: rgba(227, 79, 38, 0.45); --brand-glow-subtle: rgba(227, 79, 38, 0.15); --brand-glow-inner: rgba(227, 79, 38, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="HTML" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="HTML" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/HTML.svg" />
                             </div>
@@ -2888,7 +3037,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #1572B6; --brand-glow: rgba(21, 114, 182, 0.45); --brand-glow-subtle: rgba(21, 114, 182, 0.15); --brand-glow-inner: rgba(21, 114, 182, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="CSS" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="CSS" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/CSS.svg" />
                             </div>
@@ -2914,7 +3063,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #777BB4; --brand-glow: rgba(119, 123, 180, 0.45); --brand-glow-subtle: rgba(119, 123, 180, 0.15); --brand-glow-inner: rgba(119, 123, 180, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="PHP" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="PHP" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/php-removebg-preview.webp" />
                             </div>
@@ -2940,7 +3089,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #00758F; --brand-glow: rgba(0, 117, 143, 0.45); --brand-glow-subtle: rgba(0, 117, 143, 0.15); --brand-glow-inner: rgba(0, 117, 143, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="SQL" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="SQL" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/sql-removebg-preview.webp" />
                             </div>
@@ -2966,7 +3115,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #9B4993; --brand-glow: rgba(155, 73, 147, 0.45); --brand-glow-subtle: rgba(155, 73, 147, 0.15); --brand-glow-inner: rgba(155, 73, 147, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="C#" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="C#" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/csharp.svg" />
                             </div>
@@ -2992,7 +3141,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #61DAFB; --brand-glow: rgba(97, 218, 251, 0.45); --brand-glow-subtle: rgba(97, 218, 251, 0.15); --brand-glow-inner: rgba(97, 218, 251, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="REACT" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="REACT" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/react.webp" />
                             </div>
@@ -3018,7 +3167,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #FFFFFF; --brand-glow: rgba(255, 255, 255, 0.35); --brand-glow-subtle: rgba(255, 255, 255, 0.12); --brand-glow-inner: rgba(255, 255, 255, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="NEXT.JS" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="NEXT.JS" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/next.svg" />
                             </div>
@@ -3044,7 +3193,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #4FC08D; --brand-glow: rgba(79, 192, 141, 0.45); --brand-glow-subtle: rgba(79, 192, 141, 0.15); --brand-glow-inner: rgba(79, 192, 141, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="VUE" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="VUE" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/vue.svg" />
                             </div>
@@ -3070,7 +3219,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #06B6D4; --brand-glow: rgba(6, 182, 212, 0.45); --brand-glow-subtle: rgba(6, 182, 212, 0.15); --brand-glow-inner: rgba(6, 182, 212, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="TAILWIND" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="TAILWIND" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/tailwind.svg" />
                             </div>
@@ -3097,7 +3246,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #F08C00; --brand-glow: rgba(240, 140, 0, 0.45); --brand-glow-subtle: rgba(240, 140, 0, 0.15); --brand-glow-inner: rgba(240, 140, 0, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="FRAMER MOTION" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="FRAMER MOTION" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/framermotion.svg" />
                             </div>
@@ -3123,7 +3272,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #FF2D20; --brand-glow: rgba(255, 45, 32, 0.45); --brand-glow-subtle: rgba(255, 45, 32, 0.15); --brand-glow-inner: rgba(255, 45, 32, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="LARAVEL" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="LARAVEL" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/laravel.svg" />
                             </div>
@@ -3149,7 +3298,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #539E43; --brand-glow: rgba(83, 158, 67, 0.45); --brand-glow-subtle: rgba(83, 158, 67, 0.15); --brand-glow-inner: rgba(83, 158, 67, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="NODE JS" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="NODE JS" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/node.webp" />
                             </div>
@@ -3175,7 +3324,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #F89820; --brand-glow: rgba(248, 152, 32, 0.45); --brand-glow-subtle: rgba(248, 152, 32, 0.15); --brand-glow-inner: rgba(248, 152, 32, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="JAVA" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="JAVA" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/java.webp" />
                             </div>
@@ -3201,7 +3350,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #512BD4; --brand-glow: rgba(81, 43, 212, 0.45); --brand-glow-subtle: rgba(81, 43, 212, 0.15); --brand-glow-inner: rgba(81, 43, 212, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt=".NET" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt=".NET" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/dotnet.svg" />
                             </div>
@@ -3227,7 +3376,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #F05032; --brand-glow: rgba(240, 80, 50, 0.45); --brand-glow-subtle: rgba(240, 80, 50, 0.15); --brand-glow-inner: rgba(240, 80, 50, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="GIT" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="GIT" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/git.svg" />
                             </div>
@@ -3253,7 +3402,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #007ACC; --brand-glow: rgba(0, 122, 204, 0.45); --brand-glow-subtle: rgba(0, 122, 204, 0.15); --brand-glow-inner: rgba(0, 122, 204, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="VSCODE" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="VSCODE" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/VSCODE.webp" />
                             </div>
@@ -3279,7 +3428,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #F24E1E; --brand-glow: rgba(242, 78, 30, 0.45); --brand-glow-subtle: rgba(242, 78, 30, 0.15); --brand-glow-inner: rgba(242, 78, 30, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="FIGMA" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="FIGMA" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/figma.svg" />
                             </div>
@@ -3305,7 +3454,7 @@
                         <div class="tech-brand-card"
                             style="--brand-color: #FF6C2C; --brand-glow: rgba(255, 108, 44, 0.45); --brand-glow-subtle: rgba(255, 108, 44, 0.15); --brand-glow-inner: rgba(255, 108, 44, 0.08);">
                             <div class="absolute inset-0 flex items-center justify-center p-8">
-                                <img alt="CPANEL" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain"
+                                <img alt="CPANEL" width="120" height="120" loading="lazy" decoding="async" class="tech-img object-contain" onerror="window.resolveAssetPath(this)"
                                     style="position:absolute;height:80%;width:80%;left:10%;top:10%;color:transparent;mix-blend-mode:normal"
                                     src="images/PANEL.svg" />
                             </div>
@@ -4808,6 +4957,161 @@
                 setTimeout(initParadrop, 800);
                 setTimeout(initParadrop, 2000);
             })();
+    </script>
+
+    <!-- ============================================================
+         HERO DYNAMIC NEON TYPEWRITER ENGINE (HYDRATION RESILIENT)
+         ============================================================ -->
+    <script>
+        (function () {
+            const WORDS = ["CODE", "SUCCESS", "TANGIBLE IMPACT", "REAL VALUE"];
+            const TYPE_SPEED_MIN = 65;
+            const TYPE_SPEED_MAX = 105;
+            const DELETE_SPEED = 35;
+            const PAUSE_AFTER_WORD = 2000;
+            const PAUSE_AFTER_DELETE = 300;
+
+            let wordIdx = 0;
+            let charIdx = WORDS[0].length;
+            let isDeleting = false;
+            let timeoutId = null;
+            let isLoopStarted = false;
+
+            function resolveTarget() {
+                let textEl = document.getElementById('hero-typewriter-text');
+                let cursorEl = document.getElementById('hero-typewriter-cursor');
+
+                if (textEl && cursorEl && textEl.isConnected) {
+                    return { textEl, cursorEl };
+                }
+
+                // If elements were removed or clobbered by React hydration:
+                const mission = document.getElementById('mission') || document.querySelector('section#mission');
+                if (!mission) return null;
+
+                const heading = mission.querySelector('h1, h2');
+                if (!heading) return null;
+
+                // Check if typewriter-box exists in heading
+                let box = heading.querySelector('.typewriter-box');
+                if (!box) {
+                    const spans = heading.querySelectorAll('span');
+                    for (let s of spans) {
+                        const txt = s.textContent.trim();
+                        if (txt === 'CODE' || WORDS.includes(txt)) {
+                            box = document.createElement('span');
+                            box.className = 'typewriter-box';
+                            box.setAttribute('aria-label', 'Transforming ideas into digital solutions');
+                            box.innerHTML = `<span id="hero-typewriter-text" class="text-[#CFFF04] text-glow-neon font-brier leading-[1.1]">${txt}</span><span id="hero-typewriter-cursor" class="typewriter-cursor is-blinking" aria-hidden="true">|</span>`;
+                            s.replaceWith(box);
+                            break;
+                        }
+                    }
+                }
+
+                if (box) {
+                    textEl = box.querySelector('#hero-typewriter-text');
+                    cursorEl = box.querySelector('#hero-typewriter-cursor');
+                    if (!textEl) {
+                        textEl = document.createElement('span');
+                        textEl.id = 'hero-typewriter-text';
+                        textEl.className = 'text-[#CFFF04] text-glow-neon font-brier leading-[1.1]';
+                        textEl.textContent = WORDS[wordIdx].substring(0, charIdx) || 'CODE';
+                        box.prepend(textEl);
+                    }
+                    if (!cursorEl) {
+                        cursorEl = document.createElement('span');
+                        cursorEl.id = 'hero-typewriter-cursor';
+                        cursorEl.className = 'typewriter-cursor is-blinking';
+                        cursorEl.textContent = '|';
+                        box.appendChild(cursorEl);
+                    }
+                    return { textEl, cursorEl };
+                }
+
+                return null;
+            }
+
+            function setCursorBlink(cursorEl, blinking) {
+                if (!cursorEl) return;
+                if (blinking) {
+                    cursorEl.classList.add('is-blinking');
+                } else {
+                    cursorEl.classList.remove('is-blinking');
+                }
+            }
+
+            function tick() {
+                const target = resolveTarget();
+                if (!target) {
+                    timeoutId = setTimeout(tick, 100);
+                    return;
+                }
+
+                const { textEl, cursorEl } = target;
+                const currentWord = WORDS[wordIdx];
+
+                if (isDeleting) {
+                    charIdx--;
+                    textEl.textContent = currentWord.substring(0, charIdx);
+                    setCursorBlink(cursorEl, false);
+
+                    if (charIdx === 0) {
+                        isDeleting = false;
+                        wordIdx = (wordIdx + 1) % WORDS.length;
+                        setCursorBlink(cursorEl, true);
+                        timeoutId = setTimeout(tick, PAUSE_AFTER_DELETE);
+                        return;
+                    }
+                    timeoutId = setTimeout(tick, DELETE_SPEED);
+                } else {
+                    charIdx++;
+                    textEl.textContent = currentWord.substring(0, charIdx);
+                    setCursorBlink(cursorEl, false);
+
+                    if (charIdx === currentWord.length) {
+                        isDeleting = true;
+                        setCursorBlink(cursorEl, true);
+                        timeoutId = setTimeout(tick, PAUSE_AFTER_WORD);
+                        return;
+                    }
+                    const jitter = Math.floor(Math.random() * (TYPE_SPEED_MAX - TYPE_SPEED_MIN + 1)) + TYPE_SPEED_MIN;
+                    timeoutId = setTimeout(tick, jitter);
+                }
+            }
+
+            function startEngine() {
+                if (isLoopStarted) return;
+                const target = resolveTarget();
+                if (!target) return;
+
+                isLoopStarted = true;
+                setCursorBlink(target.cursorEl, true);
+
+                // Start active deletion and cycling after a brief 600ms
+                timeoutId = setTimeout(function () {
+                    isDeleting = true;
+                    tick();
+                }, 600);
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', startEngine);
+            } else {
+                startEngine();
+            }
+
+            window.addEventListener('load', startEngine);
+
+            // Re-bind instantly on any DOM mutation from React
+            const observer = new MutationObserver(function () {
+                const target = resolveTarget();
+                if (target && !isLoopStarted) {
+                    startEngine();
+                }
+            });
+            observer.observe(document.documentElement, { childList: true, subtree: true });
+        })();
     </script>
 </body>
 

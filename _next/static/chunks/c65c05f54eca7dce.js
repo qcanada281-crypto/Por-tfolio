@@ -17856,24 +17856,26 @@ void main() {
                                                     className: "text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight text-balance leading-[1.1] xl:text-8xl",
                                                     children: [(0,
                                                         t.jsx)("span", {
-                                                            className: "text-lorenzo-accent font-brier leading-[1.1] text-8xl",
-                                                            children: "CRAFTING"
-                                                        }), " DIGITAL", (0,
-                                                            t.jsx)("br", {}), "EXPERIENCES, BUILDING", (0,
-                                                                t.jsx)("br", {}), (0,
-                                                                    t.jsx)("span", {
-                                                                        className: "text-lorenzo-accent font-brier leading-[1.1]",
-                                                                        children: "SOLUTIONS"
-                                                                    }), " THAT", (0,
-                                                                        t.jsx)("br", {}), "MATTER. TRANSFORMING", (0,
-                                                                            t.jsx)("br", {}), "IDEAS INTO", (0,
-                                                                                t.jsx)("br", {}), (0,
-                                                                                    t.jsx)("span", {
-                                                                                        className: "text-lorenzo-accent font-brier leading-[1.1]",
-                                                                                        children: "CODE"
-                                                                                    }), " WITH", (0,
-                                                                                        t.jsx)("br", {}), "PASSION AND", (0,
-                                                                                            t.jsx)("br", {}), "PRECISION."]
+                                                            className: "text-lorenzo-accent font-brier leading-[1.1]",
+                                                            children: "ENGINEERING"
+                                                        }), " POWERFUL", (0,
+                                                            t.jsx)("br", {}), "SOFTWARE SOLUTIONS,", (0,
+                                                                t.jsx)("br", {}), "TRANSFORMED INTO", (0,
+                                                                    t.jsx)("br", {}), (0,
+                                                                        t.jsxs)("span", {
+                                                                            className: "typewriter-box",
+                                                                            children: [(0,
+                                                                                t.jsx)("span", {
+                                                                                    id: "hero-typewriter-text",
+                                                                                    className: "text-lorenzo-accent font-brier leading-[1.1]",
+                                                                                    children: "CODE"
+                                                                                }), (0,
+                                                                                t.jsx)("span", {
+                                                                                    id: "hero-typewriter-cursor",
+                                                                                    className: "typewriter-cursor is-blinking",
+                                                                                    children: "|"
+                                                                                })]
+                                                                        })]
                                                 })
                                         })]
                             })
@@ -19617,6 +19619,10 @@ void main() {
                                                                         src: e.image || "/placeholder.svg",
                                                                         alt: e.name,
                                                                         fill: !0,
+                                                                        unoptimized: !0,
+                                                                        onError: t => {
+                                                                            window.resolveAssetPath && window.resolveAssetPath(t.currentTarget)
+                                                                        },
                                                                         className: "tech-img object-contain",
                                                                         style: {
                                                                             mixBlendMode: "normal"

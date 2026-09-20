@@ -78,17 +78,19 @@ def patch_vercel_analytics():
         print("⚠️  Vercel chunk not found, skipping.")
         return
     content = VERCEL_CHUNK.read_text(encoding="utf-8")
-    bypass = ('if(typeof window!=="undefined"&&'
-              '(window.location.hostname==="localhost"||'
-              'window.location.hostname==="127.0.0.1"||'
-              'window.location.protocol==="file:"))return;')
-    if bypass in content:
+    bypass_pattern = r'window\.location\.hostname\s*===\s*["\']localhost["\']'
+    if re.search(bypass_pattern, content):
         print("✔  Local bypass already active.")
         return
-    # inject before the first fetch/sendBeacon call inside the analytics payload
-    target = 'let i=t.scriptSrc?t.scriptSrc'
-    if target in content:
-        content = content.replace(target, bypass + "\n" + target)
+    
+    target_match = re.search(r'let\s+i\s*=\s*t\.scriptSrc\s*\?\s*t\.scriptSrc', content)
+    if target_match:
+        target = target_match.group(0)
+        bypass = ('if (typeof window !== "undefined" && '
+                  '(window.location.hostname === "localhost" || '
+                  'window.location.hostname === "127.0.0.1" || '
+                  'window.location.protocol === "file:")) return;\n                ')
+        content = content.replace(target, bypass + target, 1)
         VERCEL_CHUNK.write_text(content, encoding="utf-8")
         print("✔  Local bypass injected successfully.")
     else:
