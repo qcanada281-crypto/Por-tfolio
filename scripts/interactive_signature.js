@@ -246,18 +246,21 @@
             animId = requestAnimationFrame(step);
         }
 
-        // Hover trigger (re-signs on hover)
-        container.addEventListener('mouseenter', () => {
+        // Container re-sign method
+        container.reSign = function () {
             if (animId) cancelAnimationFrame(animId);
             isAnimating = false;
             animateSignature();
+        };
+
+        // Hover trigger (re-signs on hover)
+        container.addEventListener('mouseenter', () => {
+            container.reSign();
         });
 
         // Click / Touch trigger
         container.addEventListener('click', () => {
-            if (animId) cancelAnimationFrame(animId);
-            isAnimating = false;
-            animateSignature();
+            container.reSign();
         });
 
         // Auto-play when scrolled into view
@@ -304,6 +307,23 @@
             }
         }
     }
+
+    // Expose functions globally on window
+    window.triggerSignatureAnimation = function () {
+        const containers = document.querySelectorAll('.interactive-signature-container');
+        containers.forEach(c => {
+            if (typeof c.reSign === 'function') c.reSign();
+        });
+    };
+    window.initInteractiveSignature = mountAndInit;
+
+    // Delegated click handler on document
+    document.addEventListener('click', function (e) {
+        const sig = e.target.closest('.interactive-signature-container');
+        if (sig && typeof sig.reSign === 'function') {
+            sig.reSign();
+        }
+    });
 
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', mountAndInit);
